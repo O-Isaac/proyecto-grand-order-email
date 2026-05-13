@@ -13,7 +13,25 @@
 	"upload_source_maps": true,
 	"compatibility_flags": [
 		"nodejs_compat"
-	]
+	],
+	"vars": {
+		"ALLOWED_EMAILS_DOMAINS": "",
+		"DISCORD_WEBHOOK_URL": ""
+	},
+	"send_email": [
+		{
+			"name": "EMAIL",
+		}
+	],
+	"ai": {
+		"binding": "AI",
+	},
+	"alias": {
+		"@ty": "./src/types",
+		"@services": "./src/services",
+		"@helpers": "./src/helpers",
+		"@templates": "./src/templates"
+	}
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

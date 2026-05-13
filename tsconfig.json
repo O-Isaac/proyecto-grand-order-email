@@ -39,7 +39,13 @@
 		"types": [
 			"./worker-configuration.d.ts",
 			"node"
-		]
+		],
+		"paths": {
+			"@services/*": ["./src/services/*"],
+			"@helpers/*": ["./src/helpers/*"],
+			"@ty/*": ["./src/types/*"],
+			"@templates/*": ["./src/templates/*"]
+		}
 	},
 	"exclude": ["test"],
 	"include": ["worker-configuration.d.ts", "src/**/*.ts"]

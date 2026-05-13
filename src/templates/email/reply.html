@@ -1,0 +1,239 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{subject}}</title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #f9f9f8;
+        }
+
+        @media only screen and (max-width:600px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .card-pad {
+                padding: 24px 20px !important;
+            }
+
+            .meta-cell {
+                display: block !important;
+                width: 100% !important;
+                border-right: none !important;
+                border-bottom: 1px solid #efefed !important;
+            }
+
+            .cta-gap {
+                display: block !important;
+                height: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f9f9f8;">
+
+    <!-- Preheader -->
+    <div
+        style="display:none; font-size:1px; color:#f9f9f8; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
+        Soporte de Proyecto Grand Order — {{subject}}</div>
+
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#f9f9f8;">
+        <tr>
+            <td align="center" style="padding:40px 16px 56px;">
+                <table role="presentation" class="email-container" border="0" cellpadding="0" cellspacing="0"
+                    width="560" style="max-width:560px;">
+
+
+                    <!-- ── LOGO ─────────────────────────────────── -->
+                    <tr>
+                        <td style="padding:0 0 28px;" align="left">
+                            <img src="https://i.imgur.com/A5VHro2.png" alt="Proyecto Grand Order" height="28"
+                                style="height:28px; width:auto; display:block;" />
+                        </td>
+                    </tr>
+
+
+                    <!-- ── CARD (body + meta unidos) ────────────── -->
+                    <tr>
+                        <td style="background:#ffffff; border-radius:8px; border:1px solid #e8e8e6; overflow:hidden;"
+                            bgcolor="#ffffff">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                                <!-- Subject -->
+                                <tr>
+                                    <td class="card-pad"
+                                        style="padding:32px 36px 24px; border-bottom:1px solid #efefed;">
+                                        <p
+                                            style="margin:0 0 10px; font-family:Georgia,'Times New Roman',serif; font-size:21px; line-height:1.3; color:#111110; letter-spacing:-0.02em;">
+                                            {{subject}}</p>
+                                        <p
+                                            style="margin:0; font-family:Arial,sans-serif; font-size:12px; color:#aaa9a6;">
+                                            {{sent_date}}</p>
+                                    </td>
+                                </tr>
+
+                                <!-- Body -->
+                                <tr>
+                                    <td class="card-pad"
+                                        style="padding:28px 36px 36px; border-bottom:1px solid #efefed;">
+
+                                        <!-- From row -->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                            width="100%" style="margin-bottom:24px;">
+                                            <tr>
+                                                <td width="36" valign="middle" style="padding-right:11px;">
+                                                    <div
+                                                        style="width:34px;height:34px;border-radius:50%;background:#111110;text-align:center;line-height:34px;">
+                                                        <span
+                                                            style="font-family:Georgia,serif;font-size:12px;font-weight:bold;color:#fff;letter-spacing:0.02em;">PG</span>
+                                                    </div>
+                                                </td>
+                                                <td valign="middle">
+                                                    <p
+                                                        style="margin:0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111110;line-height:1.2;">
+                                                        Proyecto Grand Order</p>
+                                                    <p
+                                                        style="margin:2px 0 0;font-family:Arial,sans-serif;font-size:11.5px;color:#aaa9a6;">
+                                                        Agente de soporte</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Greeting -->
+                                        <p
+                                            style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:15.5px;color:#222221;line-height:1.75;">
+                                            Hola {{user_name}},</p>
+
+                                        <!-- Message -->
+                                        <div
+                                            style="font-family:Georgia,'Times New Roman',serif;font-size:15.5px;color:#333331;line-height:1.8;">
+                                            {{message_body}}</div>
+
+                                        <!-- Notice -->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                            width="100%" style="margin-top:32px;">
+                                            <tr>
+                                                <td
+                                                    style="padding:13px 16px;border-radius:6px;background:#f5f5f3;border:1px solid #e8e8e6;">
+                                                    <p
+                                                        style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#888885;line-height:1.65;">
+                                                        Este mensaje ha sido revisado y sera visto por todo el equipo de
+                                                        traduccion de Proyecto Grand Order.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+
+                                <!-- META — dentro del mismo card -->
+                                <tr>
+                                    <td style="background:#fafaf9;" bgcolor="#fafaf9">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                            width="100%">
+                                            <tr>
+                                                <td class="meta-cell" width="50%"
+                                                    style="padding:14px 24px;border-right:1px solid #efefed;">
+                                                    <p
+                                                        style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:#bbb9b6;">
+                                                        Respondido por</p>
+                                                    <p
+                                                        style="margin:0;font-family:Arial,sans-serif;font-size:12.5px;font-weight:600;color:#111110;">
+                                                        Agente IA · PGO</p>
+                                                </td>
+                                                <td class="meta-cell" width="50%" style="padding:14px 24px;">
+                                                    <p
+                                                        style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:#bbb9b6;">
+                                                        Tiempo de respuesta</p>
+                                                    <p
+                                                        style="margin:0;font-family:Arial,sans-serif;font-size:12.5px;font-weight:600;color:#111110;">
+                                                        {{response_time}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+
+                    <!-- ── CTAs ──────────────────────────────────── -->
+                    <tr>
+                        <td style="padding-top:22px;" align="center">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding-right:8px;">
+                                        <a href="https://discord.gg/fate-go-esp"
+                                            style="display:inline-block;padding:11px 22px;background:#5865F2;font-family:Arial,sans-serif;font-size:12.5px;font-weight:bold;color:#fff;text-decoration:none;border-radius:6px;letter-spacing:0.02em;white-space:nowrap;">Discord
+                                        </a>
+                                    </td>
+                                    <td class="cta-gap">
+                                        <a href="https://proyectograndorder.es/docs"
+                                            style="display:inline-block;padding:10px 22px;background:#fff;border:1px solid #dddcda;font-family:Arial,sans-serif;font-size:12.5px;font-weight:bold;color:#555553;text-decoration:none;border-radius:6px;letter-spacing:0.02em;white-space:nowrap;">Documentaci&#243;n</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+                    <!-- ── FOOTER ────────────────────────────────── -->
+                    <tr>
+                        <td style="padding-top:28px;" align="center">
+                            <p
+                                style="margin:0 0 5px;font-family:Arial,sans-serif;font-size:11px;color:#c0bebb;line-height:1.7;">
+                                <a href="https://proyectograndorder.es"
+                                    style="color:#c0bebb;text-decoration:none;">proyectograndorder.es</a>
+                                &nbsp;&middot;&nbsp;
+                                <a href="https://proyectograndorder.es/acerca-del-proyecto"
+                                    style="color:#c0bebb;text-decoration:none;">Comunidad</a>
+                                &nbsp;&middot;&nbsp;
+                                <a href="https://proyectograndorder.es/reportes"
+                                    style="color:#c0bebb;text-decoration:none;">Reportar error</a>
+                            </p>
+                            <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#d5d3d0;">MIT 2026
+                                &copy; Proyecto Grand Order</p>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
