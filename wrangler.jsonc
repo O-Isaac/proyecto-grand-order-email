@@ -16,15 +16,16 @@
 	],
 	"vars": {
 		"ALLOWED_EMAILS_DOMAINS": "",
-		"DISCORD_WEBHOOK_URL": ""
+		"DISCORD_WEBHOOK_URL": "",
+		"BACKLISTED_EMAILS": ""
 	},
 	"send_email": [
 		{
-			"name": "EMAIL",
+			"name": "EMAIL"
 		}
 	],
 	"ai": {
-		"binding": "AI",
+		"binding": "AI"
 	},
 	"alias": {
 		"@ty": "./src/types",
