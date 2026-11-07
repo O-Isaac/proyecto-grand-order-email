@@ -17,7 +17,7 @@
 	],
 	"vars": {
 		"ALLOWED_EMAILS_DOMAINS": "hotmail.com,gmail.com,protonmail.com,proton.me",
-		"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/1568355753218277587/C3-LlNH6e9xRuvyMxcUVqKMsS1LcMlEuX3fNuZov6lf0n3dAPOzmBlQEiHHL925DAjiA",
+		"DISCORD_WEBHOOK_URL": "",
 		"BACKLISTED_EMAILS": ""
 	},
 	"send_email": [
