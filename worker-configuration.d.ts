@@ -9,7 +9,8 @@ declare namespace Cloudflare {
 		EMAIL: SendEmail;
 		AI: Ai;
 		ALLOWED_EMAILS_DOMAINS: "hotmail.com,gmail.com,protonmail.com,proton.me";
-		DISCORD_WEBHOOK_URL: "https://discord.com/api/webhooks/1501262928660402236/b_lsoi79DhazvyMUlM3-u8KD6QFrc3wq0jz7WGjhRJv3CPMQwyUqNAUMclX4uqWIvR65";
+		DISCORD_WEBHOOK_URL: "";
+        BACKLISTED_EMAILS: String;
 	}
 }
 interface Env extends Cloudflare.Env {}
