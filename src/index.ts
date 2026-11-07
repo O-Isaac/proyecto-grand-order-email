@@ -59,18 +59,24 @@ export default {
 			return;
 		}
 
+		if (AuthService.isBlackListed(env, message.from)) {
+			console.warn(`Blacklisted email, skipping AI response: ${message.from}`);
+			return;
+		}
+
 		// Phase 4: Generate AI reply
 		const isReply = !!email.inReplyTo || (email.subject?.toLowerCase().startsWith("re:") ?? false);
 		const templateName = isReply ? "reply-received" : "reply";
 
-		const ai = new AIService(env.AI);
-		const aiReply = await ai.generateReply(
-			email.text || "",
-			imageAttachments.map((a) => ({
-				content: toArrayBuffer(a.content),
-				mimeType: a.mimeType || "image/jpeg",
-			}))
-		);
+		// Remove AI Reply
+		// const ai = new AIService(env.AI);
+		// const aiReply = await ai.generateReply(
+		// 	email.text || "",
+		// 	imageAttachments.map((a) => ({
+		// 		content: toArrayBuffer(a.content),
+		// 		mimeType: a.mimeType || "image/jpeg",
+		// 	}))
+		// );
 
 		// Phase 5: Send email reply
 		const mailerTemplateService = new TemplateMailerService();
@@ -84,7 +90,7 @@ export default {
 				subject: email.subject || "Tu consulta",
 				sent_date: new Date().toLocaleString(),
 				user_name: email.from?.name || email.from?.address || "Usuario",
-				message_body: aiReply,
+				message_body: "Gracias por compartir su reporte. Nuestro equipo revisará la información proporcionada y valorará su implementación en una próxima actualización del juego. Agradecemos su colaboración y ayuda para seguir mejorando la experiencia.",
 				response_time: "unos segundos",
 			},
 		});
