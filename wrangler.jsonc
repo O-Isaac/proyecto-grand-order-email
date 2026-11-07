@@ -8,15 +8,16 @@
 	"main": "src/index.ts",
 	"compatibility_date": "2026-05-08",
 	"observability": {
-		"enabled": true
+		"enabled": true,
+		"redact_query_string": false
 	},
 	"upload_source_maps": true,
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
 	"vars": {
-		"ALLOWED_EMAILS_DOMAINS": "",
-		"DISCORD_WEBHOOK_URL": "",
+		"ALLOWED_EMAILS_DOMAINS": "hotmail.com,gmail.com,protonmail.com,proton.me",
+		"DISCORD_WEBHOOK_URL": "https://discord.com/api/webhooks/1568355753218277587/C3-LlNH6e9xRuvyMxcUVqKMsS1LcMlEuX3fNuZov6lf0n3dAPOzmBlQEiHHL925DAjiA",
 		"BACKLISTED_EMAILS": ""
 	},
 	"send_email": [
